@@ -8,14 +8,14 @@ namespace TennisScore
 {
     class Point
     {
-        public int WhoServe { get; }    //readonly int WhoServe;
+        public int WhoServe { get; private set; }    //readonly int WhoServe;
         //public double Chance;
-        public int WhoWin { get; }
+        public int WhoWin { get; private set; }
 
-        public Point(int ws, int ww)
+        public Point(int whoServe, int whoWin)
         {
-            WhoServe = ws;
-            WhoWin = ww;
+            WhoServe = whoServe;
+            WhoWin = whoWin;
         }
     }
 }

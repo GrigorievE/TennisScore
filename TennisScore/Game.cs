@@ -8,20 +8,20 @@ namespace TennisScore
 {
     class Game
     {
-        public int WhoServe;
-        public double Chance;
-        public int WhoWin;
+        public int WhoServe { get; }
+        //public double Chance { get; private set; }
+        public int WhoWin { get; private set; }
 
-        public int P1;
-        public int P2;
+        public int P1 { get; private set; }
+        public int P2 { get; private set; }
 
-        List<Point> PointGame = new List<Point>();
+        List<Point> Point = new List<Point>();
 
-        private bool End;
+        public bool End { get; private set; }
 
-        public Game(int ws)
+        public Game(int whoServe)
         {
-            WhoServe = ws;
+            WhoServe = whoServe;
             P1 = 0;
             P2 = 0;
             End = false;
@@ -33,12 +33,12 @@ namespace TennisScore
                 P1++;
             else P2++;
 
-            PointGame.Add(p);
+            Point.Add(p);
 
-            EndMetod();
+            EndGame();
         }
 
-        private void EndMetod()
+        private void EndGame()
         {
             if (P1 >= 4 && P1 - P2 >= 2)
             {
@@ -53,7 +53,5 @@ namespace TennisScore
                 Serve.Change();
             }
         }
-
-
     }
 }
