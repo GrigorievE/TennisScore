@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace TennisScore
 {
-    class WhoServe
+    static class Serve
     {
+        public static int Who;
+
+        public static void Change()
+        {
+            Who = Who % 2 + 1;
+        }
     }
 }
