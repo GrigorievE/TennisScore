@@ -46,6 +46,7 @@
     <Compile Include="Game.cs" />
     <Compile Include="ISaveInFile.cs" />
     <Compile Include="Match.cs" />
+    <Compile Include="Match2.cs" />
     <Compile Include="Point.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
