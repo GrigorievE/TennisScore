@@ -17,7 +17,7 @@ namespace TennisScore
         public int S1 { get; private set; }
         public int S2 { get; private set; }
 
-        List<Set> Set = new List<Set>();
+        public List<Set> Set = new List<Set>();
 
         public bool End { get; private set; }
 

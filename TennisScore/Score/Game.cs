@@ -15,7 +15,7 @@ namespace TennisScore
         public int P1 { get; private set; }
         public int P2 { get; private set; }
 
-        List<Point> Point = new List<Point>();
+        internal List<Point> Point = new List<Point>();
 
         public bool End { get; private set; }
 
@@ -25,7 +25,7 @@ namespace TennisScore
             P1 = 0;
             P2 = 0;
             End = false;
-            Point.Add(new Point(whoServe));
+            //Point.Add(new Point(whoServe));
         }
 
         public void AddPoint(Point p)
