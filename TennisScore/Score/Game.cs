@@ -25,6 +25,7 @@ namespace TennisScore
             P1 = 0;
             P2 = 0;
             End = false;
+            Point.Add(new Point(whoServe));
         }
 
         public void AddPoint(Point p)

@@ -8,7 +8,7 @@ namespace TennisScore
 {
     static class Serve
     {
-        public static int Who { get; private set; } = 0;
+        public static int Who { get; set; } 
 
         public static void Change()
         {

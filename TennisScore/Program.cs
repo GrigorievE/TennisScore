@@ -10,9 +10,19 @@ namespace TennisScore
     {
         static void Main(string[] args)
         {
-            Point p = new Point(1, 1);
+            Console.WriteLine("Hello.");
+            Console.WriteLine("Who Serve First??? 1 or 2");
+            Serve.Who = Convert.ToInt32(Console.ReadKey()); //добавить обработку исключений
+            Match match = new Match();
+            do
+            {
+                Console.WriteLine("Who Win Point??? 1 or 2");
+                Serve.Who = Convert.ToInt32(Console.ReadKey()); //добавить обработку исключений
+            } 
+            while (!match.End);
 
 
+            Console.ReadKey();
         }
     }
 }

@@ -25,6 +25,7 @@ namespace TennisScore
             G1 = 0;
             G2 = 0;
             End = false;
+            Game.Add(new Game(whoServe));
         }
 
         public void AddGame(Game g)

@@ -8,6 +8,9 @@ namespace TennisScore
 {
     class Match
     {
+        public string Player1 { get; private set; }
+        public string Player2 { get; private set; }
+
         //public double Chance { get; private set; }
         public int WhoWin { get; private set; }
 
@@ -20,9 +23,12 @@ namespace TennisScore
 
         public Match()
         {
+            Player1 = "Player1";
+            Player2 = "Player2";
             S1 = 0;
             S2 = 0;
             End = false;
+            Set.Add(new Set(Serve.Who));
         }
 
         public void AddSet(Set s)
@@ -48,6 +54,11 @@ namespace TennisScore
                 End = true;
                 WhoWin = 2;
             }
+        }
+
+        public void WhatScore()
+        {
+
         }
     }
 }
